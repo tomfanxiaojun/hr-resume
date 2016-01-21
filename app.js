@@ -19,7 +19,7 @@ var session = require('express-session');
 
 global.dbHelper = require('./common/dbHelper');
 
-global.db = mongoose.connect("mongodb://127.0.0.1:27017/CartDemo");
+global.db = mongoose.connect("mongodb://127.0.0.1:27017/resume");
 
 app.use(session({
     secret: 'secret',
@@ -57,8 +57,10 @@ app.use(function(req, res, next) {
 
 require('./routes')(app);
 
-app.get('/', function(req, res) {
+/*app.get('/', function(req, res) {
     res.render('login');
+});*/
+app.get('/', function(req, res) {
+    res.render('index');
 });
-
 app.listen(3000);

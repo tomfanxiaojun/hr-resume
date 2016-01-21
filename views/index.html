@@ -7,25 +7,25 @@
 </head>
 <style type="text/css">
 body {
-  display: block;
-  margin: 0px;
+    display: block;
+    margin: 0px;
 }
+
 .continer {
-    width: 800px;     
-    margin: 0px auto;    
+    width: 800px;
+    margin: 0px auto;
 }
 
 .header {
     width: 100%;
     height: 200px;
     border: 1px gray solid;
-    background: rgba(74,134,186,1);
-     display: -webkit-box;
+    background: rgba(74, 134, 186, 1);
+    display: -webkit-box;
     display: -moz-box;
     display: -ms-box;
     display: -o-box;
     display: box;
-     
 }
 
 .body {
@@ -38,11 +38,11 @@ body {
     display: -ms-box;
     display: -o-box;
     display: box;
-    
 }
 
 .body-left {
-    background: rgba(255,255,255,1);
+    background: rgba(255, 255, 255, 1);
+    padding-left: 16px;
     -webkit-box-flex: 3;
     -moz-box-flex: 3;
     -ms-box-flex: 3;
@@ -51,89 +51,194 @@ body {
 }
 
 .body-right {
-    background: rgba(244,244,244,1);
+    background: rgba(244, 244, 244, 1);
+    padding-left: 16px;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -ms-box-flex: 1;
+    -o-box-flex: 1;
+    box-flex: 1;
+    border-left: 1px gray dashed;
+}
+
+.base-info {
+    margin-left: 40px;
+    margin-top: 40px;
+    -webkit-box-flex: 4;
+    -moz-box-flex: 4;
+    -ms-box-flex: 4;
+    -o-box-flex: 4;
+    box-flex: 4;
+}
+
+.base-info .top {}
+
+.base-pic {
+    margin-right: 20px;
+    margin-top: 40px;
     -webkit-box-flex: 1;
     -moz-box-flex: 1;
     -ms-box-flex: 1;
     -o-box-flex: 1;
     box-flex: 1;
 }
-.base-info{	 
-	margin-left: 40px;
-	margin-top: 40px;
-	-webkit-box-flex: 4;
-    -moz-box-flex: 4;
-    -ms-box-flex: 4;
-    -o-box-flex: 4;
-    box-flex: 4;
+
+.pic {
+    float: right;
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
 }
-.base-info .top{	 
-	
+
+.username {
+    float: left;
+    font-size: 32px;
+    font-weight: bold;
 }
-.base-pic{ 	 
-	margin-right: 20px;	
-	margin-top: 40px;
-	  -webkit-box-flex: 1;
+
+.position-target {
+    float: left;
+    margin-left: 40px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.bottom {
+    margin-top: 60px;
+}
+
+.user-info {
+    float: left;
+    margin-right: 40px;
+}
+
+.clearnfix {
+    clear: both;
+}
+
+.title {
+    font-size: 22px;
+    color: rgba(74, 134, 186, 1);
+    font-weight: bold;
+    height: 80px;
+    line-height: 80px;
+}
+
+.group-info {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-box;
+    display: -o-box;
+    display: box;
+}
+
+.data-info {
+    -webkit-box-flex: 1;
     -moz-box-flex: 1;
     -ms-box-flex: 1;
     -o-box-flex: 1;
     box-flex: 1;
-
-}
-.pic{
-	float: right;
-	width: 120px;
-	height: 120px;
-	border-radius: 60px;
 }
 
-.username{
-	float: left;
-	font-size: 32px;
-	font-weight: bold;
+.detail {
+    -webkit-box-flex: 19;
+    -moz-box-flex: 9;
+    -ms-box-flex: 9;
+    -o-box-flex: 9;
+    box-flex: 9;
 }
-.position-target{
-	float: left;
-	margin-left: 40px;
-	height: 40px;
-	line-height: 40px;
 
+.dot {
+    display: block;
+    background-color: rgba(74, 134, 186, 1);
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    float: left;
+    margin-top: 10px;
 }
-.bottom{
-	margin-top: 60px;
+
+.detail-top {
+    height: 40px;
+    line-height: 40px;
 }
-.user-info{
-	float: left;
-	margin-right: 40px;
+
+.detail-name {
+    float: left;
+    padding-left: 10px;
 }
-.clearnfix{
-	clear: both;
+
+.detail-title {
+    float: left;
+    padding-left: 160px;
+}
+
+.date-span {
+    background-color: rgba(175, 175, 175, 1);
+    display: block;
+    height: 40px;
+    width: 120px;
+    line-height: 40px;
+    padding-left: 10px;
+    float: left;
+}
+
+.right-arror {
+    display: inline-block;
+    border-left: 20px dotted rgba(175, 175, 175, 1);
+    ;
+    border-top: 20px dotted transparent;
+    border-right: 20px dotted transparent;
+    border-bottom: 20px dotted transparent;
+    float: left;
 }
 </style>
 
 <body>
     <div class="continer">
         <div class="header">
-        	<div class="base-info">
-        		<div class="top">
-        			<div class="username">箫君</div>
-        			<div class="position-target">求职目标:前端开发工程师</div>
-        		</div>
-        		<div class="bottom">
-        			<div class="user-info">27岁</div>
-        			<div class="user-info">广东省深圳</div>
-        			<div class="user-info">15813849613</div>
-        			<div class="user-info">594774261@qq.com</div>
-        		</div>
-        	</div>
-        	<div class="base-pic">
-        		<img class ="pic"src="/images/userpic.JPG" alt="我的头像">
-        	</div>
-        	<div class="clearnfix"></div>
+            <div class="base-info">
+                <div class="top">
+                    <div class="username">箫君</div>
+                    <div class="position-target">求职目标:前端开发工程师</div>
+                </div>
+                <div class="bottom">
+                    <div class="user-info">27岁</div>
+                    <div class="user-info">广东省深圳</div>
+                    <div class="user-info">15813849613</div>
+                    <div class="user-info">594774261@qq.com</div>
+                </div>
+            </div>
+            <div class="base-pic">
+                <img class="pic" src="/images/userpic.JPG" alt="我的头像">
+            </div>
+            <div class="clearnfix"></div>
         </div>
         <div class="body">
-            <div class="body-left"> </div>
-            <div class="body-right"></div>
+            <div class="body-left">
+                <div class="title">教育背景</div>
+                <div class="group-info">
+                    <div class="data-info">
+                        <span class="date-span">2008.09-2011.06</span>
+                        <span class="right-arror"></span>
+                    </div>
+                    <div class="detail">
+                        <div class="detail-top">
+                            <span class="dot"></span>
+                            <div class="detail-name">中山大学</div>
+                            <div class="detail-title">计算机及应用(本科)</div>
+                        </div>
+                        <div class="detail-bottom">
+                            <p>主修课程</p>
+                            d在说到这个问题的时候，
+                             
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="body-right">
+                <div class="title">掌握技能</div>
+            </div>
         </div>
     </div>
 </body>
